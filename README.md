@@ -14,10 +14,13 @@ The goal is to provide an accessible, lightweight, and powerful tool for explori
 - Responsive dashboard layout
 - Built with modern web technologies
 
+Implemented features:
+
+- [x] Save datasets and dashboards
+- [x] User authentication
+
 Planned features:
 
-- Save datasets and dashboards
-- User authentication
 - Shareable dashboards
 - Custom chart builder
 
@@ -29,7 +32,7 @@ Planned features:
 - **Frontend:** Angular + Tailwind CSS  
 - **Data Visualization:** Recharts (elegant charts), D3.js (advanced custom visualizations)  
 - **Data Parsing:** [PapaParse](https://www.papaparse.com/) (CSV parser)  
-- **Backend:** Node.js with Express (file upload handling using Multer)  
+- **Backend:** Node.js with Express, Mongoose (MongoDB ORM), Multer (file upload handling), bcrypt (password hashing), jsonwebtoken (JWT authentication), CORS (Cross-Origin Resource Sharing)  
 - **Testing:** Jest (frontend + backend)  
 
 ---
@@ -56,6 +59,9 @@ npm install
 ### Running the Application
 
 ```bash
+# Start MongoDB (if not already running)
+sudo systemctl start mongod # or equivalent command for your OS
+
 # Start frontend
 ng serve
 
